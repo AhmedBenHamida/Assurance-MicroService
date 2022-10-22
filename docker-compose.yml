@@ -1,0 +1,8 @@
+version: "3"
+services: 
+  springboot-app:
+   # container_name: spring-app
+    image: micro-app
+    build: .
+    ports:
+      - 8011:8011 
