@@ -1,0 +1,6 @@
+com\wadiijh\deviscrud\entity\Devis.class
+com\wadiijh\deviscrud\service\DevisService.class
+com\wadiijh\deviscrud\service\IDevis.class
+com\wadiijh\deviscrud\repository\DevisRepository.class
+com\wadiijh\deviscrud\DeviscrudApplication.class
+com\wadiijh\deviscrud\controller\DevisController.class
