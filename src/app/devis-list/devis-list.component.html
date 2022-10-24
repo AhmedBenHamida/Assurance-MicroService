@@ -1,0 +1,30 @@
+<div class="container-fluid">
+
+    
+    
+    <table class="table table-light">
+        <thead class="thead-light">
+            <tr>
+                <th>ID</th>
+                <th>AMOUNT</th>
+                <th>NUMPIECES</th>
+                <th>DATEDEVIS</th>
+                <th>ACTION</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let d of devis ">
+               <td>{{d.id}}</td>
+                <td>{{d.amount}}</td>
+                <td>{{d.numPieces}}</td>
+                <td>{{d.dateDevis}}</td>
+        
+                <td>
+                    <button class="btn btn-warning" style="margin-right: 5px;"
+                        [routerLink]="['/edit-devis',d.id]">Edit</button>
+                        <button class="btn btn-danger"(click)="deleteDevis(d.id)" >Delete</button>
+                </td>
+           
+        </tbody>
+    </table>
+</div>
