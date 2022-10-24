@@ -13,7 +13,9 @@ public class SpringCloudConfig {
         return builder.routes()
                 .route(r -> r.path("/assurance/**")
                         .uri("lb://assurance")
-                        )
+                        )  .route(r -> r.path("/api/assurance/**")
+                                .uri("lb://api/assurance")
+                                )
                
                 .build();
     }
